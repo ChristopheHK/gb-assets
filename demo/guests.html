@@ -137,16 +137,16 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const targetOrigin = 'https://gobrunch.com/gwzeqq';
+            const targetOrigin = 'https://gobrunch.com/';
 
             const sendMessage = (type) => {
                 const message = { type };
                 window.parent.postMessage(message, targetOrigin);
             };
 
-            document.getElementById('switch1-button').addEventListener('click', () => sendMessage('bhswitch1'));
-            document.getElementById('switch2-button').addEventListener('click', () => sendMessage('bhswitch2'));
-            document.getElementById('switch3-button').addEventListener('click', () => sendMessage('bhswitch3'));
+            document.getElementById('switch1-button').addEventListener('click', () => sendMessage('switch1'));
+            document.getElementById('switch2-button').addEventListener('click', () => sendMessage('switch2'));
+            document.getElementById('switch3-button').addEventListener('click', () => sendMessage('switch3'));
         });
     </script>
 
